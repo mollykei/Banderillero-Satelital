@@ -7,7 +7,7 @@ Lo primero que hice fue investigar las librerías que podía usar en esa placa c
 
 Se explica como configurar pines GPIO como entrada/salida:
 
-```C
+```python
 from machine import Pin
 
 p0 = Pin(0, Pin.OUT)    # create output pin on GPIO0
