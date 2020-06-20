@@ -5,7 +5,7 @@ Para el proyecto del Banderillero Satelital se utilizará la placa [Wipy 3.0](ht
 
 Lo primero que hice fue investigar las librerías que podía usar en esa placa con ese lenguaje, y llegué a documentación de MicroPython para la ESP32: 
 
-![GPIO en ESP32](https://imgur.com/a/9xV1wJm)
+![GPIO en ESP32](https://imgur.com/qw8sex3)
 
 
 
