@@ -17,6 +17,12 @@ Lo primero que hice fue investigar las librerías que podía usar en esa placa c
   
   [driver/include/driver/gpio.h](https://github.com/espressif/esp-idf/blob/7d75213/components/driver/include/driver/gpio.h)
   
-  Entrando en el respoitorio entonces, en el directorio: ```C esp-idf/components/driver/include/driver/gpio.h ```
+  Entrando en el respoitorio entonces, en el directorio: ```esp-idf/components/driver/include/driver/gpio.h```
+  
+ Se encuentra el detalle de como configurar los puertos, por ejemplo:
+ 
+ ```C
+   esp_err_t gpio_reset_pin(gpio_num_t gpio_num);
+```
  
  
