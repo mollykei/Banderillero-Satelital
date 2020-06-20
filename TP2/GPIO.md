@@ -13,11 +13,10 @@ Lo primero que hice fue investigar las librerías que podía usar en esa placa c
  
  ![doc-espressif](https://i.imgur.com/k2JOssT.png)
  
+  En la documentación se muestran funciones básicas para menejo de los puertos GPIO, y también indica el link del repositorio de la librería y se llega a:
+  
+  [driver/include/driver/gpio.h](https://github.com/espressif/esp-idf/blob/7d75213/components/driver/include/driver/gpio.h)
+  
+  Entrando en el respoitorio entonces, en el directorio: ```C esp-idf/components/driver/include/driver/gpio.h ```
  
- [https://github.com/espressif/esp-idf](https://github.com/espressif/esp-idf)
-
-
-
-```C
-codigo_aca
-```
+ 
