@@ -50,7 +50,17 @@ Lo primero que hice fue investigar las librerías que podía usar en esa placa c
  }
 ```
  
- La variable ```gpio_num_t```se encuentra definida en ```esp-idf/components/soc/include/hal/gpio_types.h```
+ La variable ```gpio_config_t``` y  ```gpio_num_t```se encuentran definidas en ```esp-idf/components/soc/include/hal/gpio_types.h```
+ 
+ ```C
+  typedef struct {
+     uint64_t pin_bit_mask;          /*!< GPIO pin: set with bit mask, each bit maps to a GPIO */
+     gpio_mode_t mode;               /*!< GPIO mode: set input/output mode                     */
+     gpio_pullup_t pull_up_en;       /*!< GPIO pull-up                                         */
+     gpio_pulldown_t pull_down_en;   /*!< GPIO pull-down                                       */
+     gpio_int_type_t intr_type;      /*!< GPIO interrupt type                                  */
+ } gpio_config_t;
+```
  
  ```C
  typedef enum {
