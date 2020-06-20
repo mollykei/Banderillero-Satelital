@@ -9,4 +9,9 @@ Lo primero que hice fue investigar las librerías que podía usar en esa placa c
 
 
 
- A partir de esa documentación, llegué al repositorio del framework Espressif específico para el ESP32, y pude revisar la estrucura a mas bajo nivel y  el manejo de los GPIOs [https://github.com/espressif/esp-idf](https://github.com/espressif/esp-idf)
+ A partir de esa documentación, llegué a la documentación del framework Espressif específico para el ESP32: [docs.espressif.com](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/peripherals/gpio.html)
+ 
+ 
+ 
+ 
+ [https://github.com/espressif/esp-idf](https://github.com/espressif/esp-idf)
