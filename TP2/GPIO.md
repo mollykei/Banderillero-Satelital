@@ -22,7 +22,9 @@ Lo primero que hice fue investigar las librerías que podía usar en esa placa c
  Se encuentra el detalle de como configurar los puertos, por ejemplo:
  
  ```C
+   // Resetear un GPIO
    esp_err_t gpio_reset_pin(gpio_num_t gpio_num);
+
 ```
  
  
