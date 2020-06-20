@@ -121,3 +121,16 @@ Lo primero que hice fue investigar las librerías que podía usar en esa placa c
  /** @endcond */
  } gpio_num_t;
 ```
+
+En la estructura donde se define ```gpio_config_t``` se usan otras variables, como por ejemplo: ```gpio_mode_t```, que se encuentra definida en el mismo directorio ```esp-idf/components/soc/include/hal/gpio_types.h```:
+
+```C
+ typedef enum {
+     GPIO_MODE_DISABLE = GPIO_MODE_DEF_DISABLE,                                                         /*!< GPIO mode : disable input and output             */
+     GPIO_MODE_INPUT = GPIO_MODE_DEF_INPUT,                                                             /*!< GPIO mode : input only                           */
+     GPIO_MODE_OUTPUT = GPIO_MODE_DEF_OUTPUT,                                                           /*!< GPIO mode : output only mode                     */
+     GPIO_MODE_OUTPUT_OD = ((GPIO_MODE_DEF_OUTPUT) | (GPIO_MODE_DEF_OD)),                               /*!< GPIO mode : output only with open-drain mode     */
+     GPIO_MODE_INPUT_OUTPUT_OD = ((GPIO_MODE_DEF_INPUT) | (GPIO_MODE_DEF_OUTPUT) | (GPIO_MODE_DEF_OD)), /*!< GPIO mode : output and input with open-drain mode*/
+     GPIO_MODE_INPUT_OUTPUT = ((GPIO_MODE_DEF_INPUT) | (GPIO_MODE_DEF_OUTPUT)),                         /*!< GPIO mode : output and input mode                */
+ } gpio_mode_t;
+```
