@@ -50,7 +50,7 @@ Lo primero que hice fue investigar las librerías que podía usar en esa placa c
  }
 ```
  
- La variable ```gpio_num_t```se encuentra definida en ```esp-idf/components/soc/include/hal/gpio_types.h
+ La variable ```gpio_num_t```se encuentra definida en ```esp-idf/components/soc/include/hal/gpio_types.h```
  
  ```C
  typedef enum {
