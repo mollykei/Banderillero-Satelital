@@ -5,7 +5,7 @@ Para el proyecto del Banderillero Satelital se utilizará la placa [Wipy 3.0](ht
 
 Lo primero que hice fue investigar las librerías que podía usar en esa placa con ese lenguaje, y llegué a documentación de MicroPython para la ESP32: [docs.micropython.org](https://docs.micropython.org/en/latest/esp32/quickref.html#pins-and-gpio)
 
-Se explica como configurar pines GPIO como entrada/salida:
+Se explica como configurar pines GPIO como entrada/salida en Python:
 
 ```python
 from machine import Pin
