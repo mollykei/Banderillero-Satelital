@@ -24,7 +24,10 @@ Lo primero que hice fue investigar las librerías que podía usar en esa placa c
  ```C
    // Resetear un GPIO
    esp_err_t gpio_reset_pin(gpio_num_t gpio_num);
-
+   // Setear direccion en un GPIO
+   esp_err_t gpio_set_direction(gpio_num_t gpio_num, gpio_mode_t mode);
+   // Obtener valor de un GPIO
+   int gpio_get_level(gpio_num_t gpio_num);
 ```
  
  
