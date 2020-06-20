@@ -31,3 +31,22 @@ Lo primero que hice fue investigar las librerías que podía usar en esa placa c
 ```
  
  
+ Investigo más sobre la función para resetear un GPIO y llego al directorio ```esp-idf/components/driver/gpio.c```donde se detalla  ```esp_err_t gpio_reset_pin(gpio_num_t gpio_num)```:
+
+```C
+ esp_err_t gpio_reset_pin(gpio_num_t gpio_num)
+ {
+     assert(gpio_num >= 0 && GPIO_IS_VALID_GPIO(gpio_num));
+     gpio_config_t cfg = {
+         .pin_bit_mask = BIT64(gpio_num),
+         .mode = GPIO_MODE_DISABLE,
+         //for powersave reasons, the GPIO should not be floating, select pullup
+         .pull_up_en = true,
+         .pull_down_en = false,
+         .intr_type = GPIO_INTR_DISABLE,
+     };
+     gpio_config(&cfg);
+     return ESP_OK;
+ }
+```
+ 
